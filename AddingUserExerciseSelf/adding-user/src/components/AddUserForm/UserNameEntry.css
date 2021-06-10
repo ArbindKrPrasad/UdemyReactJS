@@ -1,0 +1,16 @@
+.user-name{
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
+}
+
+p{
+    text-align: left;
+    width: 100%;
+    margin-bottom: 0%;
+}
+
+input{
+    margin-left: 0%;
+    width: 100%;
+}

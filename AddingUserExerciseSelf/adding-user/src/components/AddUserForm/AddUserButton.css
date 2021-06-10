@@ -1,0 +1,12 @@
+.add-button button{
+    background-color: magenta;
+    color: aliceblue;
+    text-align: left;
+}
+
+.add-button{
+    text-align: left;
+    padding-left: 5%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}

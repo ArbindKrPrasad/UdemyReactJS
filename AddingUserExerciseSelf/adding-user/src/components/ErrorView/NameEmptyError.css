@@ -1,0 +1,27 @@
+.name-empty{
+    width: 60%;
+    
+}
+.name-empty h2{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: magenta;
+    margin: 0%;
+}
+.name-empty p{
+    height: 70px;
+    margin: 0%;
+
+    background-color: white;
+}
+.okay-button{
+    background-color: white;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: right;
+}
+.okay-button button{
+   margin: 10px;
+   background-color: magenta;
+   color: white;
+}
