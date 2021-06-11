@@ -4,13 +4,21 @@ import UserAgeEntry from "./UserAgeEntry";
 import UserNameEntry from "./UserNameEntry";
 import AddUserButton from "./AddUserButton";
 const UserDetailsForm = (props) => {
+  const [isUserNameEmpty, setUserNameEmptyStatus] = useState(true);
+  const [isUserAgeEmpty, setUserAgeEmptyStatus] = useState(true);
   const [username, setUserName] = useState("");
   const [userage, setUserAge] = useState("");
   const setUserNameHandler = (enteredName) => {
     setUserName(enteredName);
+    enteredName == ""
+      ? setUserNameEmptyStatus(true)
+      : setUserNameEmptyStatus(false);
   };
   const setUserAgeHandler = (enteredAge) => {
     setUserAge(enteredAge);
+    enteredAge == ""
+      ? setUserAgeEmptyStatus(true)
+      : setUserAgeEmptyStatus(false);
   };
 
   const setUserDetailHandler = () => {
@@ -23,6 +31,8 @@ const UserDetailsForm = (props) => {
     console.log(userage);
     props.onUserDetailsChange(detail);
   };
+
+//   isUserNameEmpty && return()
 
   return (
     <div className="user-details">

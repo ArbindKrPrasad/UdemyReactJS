@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import UserDetailsForm from "./AddUserForm/UserDetailsForm";
 import UserContainer from "./ViewUser/UserContainer";
-import NameEmptyError from './ErrorView/NameEmptyError';
-import AgeError from './ErrorView/AgeError'
+import NameEmptyError from "./ErrorView/NameEmptyError";
+import AgeError from "./ErrorView/AgeError";
+import "./Container.css";
 
 const Container = () => {
   const details = [
@@ -19,10 +20,16 @@ const Container = () => {
 
   return (
     <div>
-      <UserDetailsForm onUserDetailsChange={onUserDetailsChangeHandler} />
-      <UserContainer userDetails = {userDetails}/>
-      {/* <NameEmptyError/>
+      <div className="container">
+        <UserDetailsForm onUserDetailsChange={onUserDetailsChangeHandler} />
+        <UserContainer userDetails={userDetails} />
+
+        {/* <NameEmptyError/>
       <AgeError/> */}
+      </div>
+      <div className='name-empty'>
+        <NameEmptyError />
+      </div>
     </div>
   );
 };
